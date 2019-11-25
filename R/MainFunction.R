@@ -2,12 +2,10 @@
 #'
 #' This functions tranlate math lenguaje to R datasets
 #'
-#' @param Tmin Min. Temperature
-#' @param Tmax Max. Temperature
-#' @param Tinterv Interval Temperature
+#' @param Wavelength Min. Temperature
+#' @param Temperature Max. Temperature
 #'
 #' @return PlanckVal
-#' @return Nothing, just create dataframes
 #'
 #' @export
 Plank <- function(Wavelength,Temperature){
@@ -15,6 +13,20 @@ Plank <- function(Wavelength,Temperature){
   PlanckVal <- (2*pi*h*(cvel^2))/((Wavelength^5)*((exp(1)^((h*cvel)/(Wavelength*k*Temperature)))-1))
   return(PlanckVal)
 }
+
+#' Create and Plot Planck, Wein and Kircjhoff data
+#'
+#' This functions tranlate math lenguaje to R datasets
+#'
+#' @param Tmin Min. Temperature
+#' @param Tmax Max. Temperature
+#' @param Tinterv Interval Temperature
+#' @param Wmin Min. Wavelength
+#' @param Wmax Max. Wavelength
+#' @param Winterv Interval Wavelength
+#'
+#' @return Nothing, just create dataframes
+#'
 #' @export
 DefinePlanckData <- function(Tmin=1000,Tmax=10000,Tinterv=1000,Wmin=0.01,Wmax=3000,Winterv=1){
   # -> Speed of Light

@@ -7,16 +7,12 @@
 Plank(Wavelength, Temperature)
 }
 \arguments{
-\item{Tmin}{Min. Temperature}
+\item{Wavelength}{Min. Temperature}
 
-\item{Tmax}{Max. Temperature}
-
-\item{Tinterv}{Interval Temperature}
+\item{Temperature}{Max. Temperature}
 }
 \value{
 PlanckVal
-
-Nothing, just create dataframes
 }
 \description{
 This functions tranlate math lenguaje to R datasets

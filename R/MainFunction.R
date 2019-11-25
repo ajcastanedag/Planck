@@ -6,16 +6,15 @@
 #' @param Tmax Max. Temperature
 #' @param Tinterv Interval Temperature
 #'
+#' @return PlanckVal
 #' @return Nothing, just create dataframes
 #'
 #' @export
-#######################################################
 Plank <- function(Wavelength,Temperature){
   Wavelength <- Wavelength * 10^-9
   PlanckVal <- (2*pi*h*(cvel^2))/((Wavelength^5)*((exp(1)^((h*cvel)/(Wavelength*k*Temperature)))-1))
   return(PlanckVal)
 }
-#######################################################
 DefinePlanckData <- function(Tmin=1000,Tmax=10000,Tinterv=1000,Wmin=0.01,Wmax=3000,Winterv=1){
   # -> Speed of Light
   cvel <<- 2.99792460e8
@@ -46,5 +45,5 @@ DefinePlanckData <- function(Tmin=1000,Tmax=10000,Tinterv=1000,Wmin=0.01,Wmax=30
   ls()
   #rm(list="cvel","h","k","Wein_C","Xval_nm" )
 }
-#######################################################
+
 

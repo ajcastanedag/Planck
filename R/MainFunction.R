@@ -15,6 +15,7 @@ Plank <- function(Wavelength,Temperature){
   PlanckVal <- (2*pi*h*(cvel^2))/((Wavelength^5)*((exp(1)^((h*cvel)/(Wavelength*k*Temperature)))-1))
   return(PlanckVal)
 }
+#' @export
 DefinePlanckData <- function(Tmin=1000,Tmax=10000,Tinterv=1000,Wmin=0.01,Wmax=3000,Winterv=1){
   # -> Speed of Light
   cvel <<- 2.99792460e8

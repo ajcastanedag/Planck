@@ -28,3 +28,6 @@ Planck_Plot <- function(PlankData_F){
           legend.background = element_rect(fill="black",
           size=0.5, linetype="solid"))
 }
+
+
+

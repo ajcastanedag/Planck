@@ -2,4 +2,7 @@
 
 export(DefinePlanckData)
 export(Define_Variables)
+export(Planck_Plot)
 export(Plank_Rad)
+importFrom(ggdark,dark_theme_gray)
+importFrom(ggplot2,ggplot)

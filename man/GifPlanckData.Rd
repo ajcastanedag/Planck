@@ -12,7 +12,7 @@ GifPlanckData(Planck_Graph, Time = 0.01)
 \item{Time}{Fade time}
 }
 \value{
-Nothing, just say Hello
+Gif
 }
 \description{
 This function says hello to new EAGLES

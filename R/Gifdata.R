@@ -5,7 +5,7 @@
 #'@param Planck_Graph dataframe with planck data
 #'@param Time Fade time
 #'
-#'@return Nothing, just say Hello
+#'@return Gif
 #'
 #'@importFrom ggplot2 ggplot
 #'@importFrom gganimate transition_time
@@ -25,6 +25,7 @@ GifPlanckData <- function(Planck_Graph, Time = 0.01){
                 enter_fade() +
                 exit_fade()
   Planck_Gif <<- Planck_Gif
+  return(Planck_Gif)
 }
 
 

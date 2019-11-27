@@ -10,7 +10,7 @@ Planck_Plot(PlankData_F)
 \item{PlankData_F}{dataframe with planck data}
 }
 \value{
-Nothing, just say Hello
+Graph of dataframe!
 }
 \description{
 This function says hello to new EAGLES

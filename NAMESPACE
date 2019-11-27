@@ -2,7 +2,12 @@
 
 export(DefinePlanckData)
 export(Define_Variables)
+export(Planck_Gif)
 export(Planck_Plot)
 export(Plank_Rad)
+importFrom(gganimate,enter_fade)
+importFrom(gganimate,exit_fade)
+importFrom(gganimate,shadow_wake)
+importFrom(gganimate,transition_time)
 importFrom(ggdark,dark_theme_gray)
 importFrom(ggplot2,ggplot)

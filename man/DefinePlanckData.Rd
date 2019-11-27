@@ -30,5 +30,5 @@ DefinePlanckData(
 Nothing, just create dataframes
 }
 \description{
-This functions tranlate math lenguaje to R datasets
+This functions creates dataframe with radiance data
 }

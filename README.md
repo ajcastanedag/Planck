@@ -15,9 +15,7 @@ PlotPlanckData(PlankData_F)
 GifPlanckData(Planck_Graph)
 ```
 
-    ```{r }
-    x <- 1:10
-    y <- round(rnorm(10, x, 1), 2)
-    df <- data.frame(x, y)
-    df
-    ```
+```{r}
+# execute code if the date is later than a specified day
+do_it = Sys.Date() > '2018-02-14'
+```

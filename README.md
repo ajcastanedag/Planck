@@ -1,6 +1,6 @@
 # Planck
 
-```ruby
+```{r }
 install_github("https://github.com/ajcastanedag/Planck")
 
 library(devtools)

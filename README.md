@@ -1,6 +1,6 @@
 # Planck
 
-```{r }
+```{R }
 install_github("https://github.com/ajcastanedag/Planck")
 
 library(devtools)

@@ -8,7 +8,7 @@ library(gganimate)
 library(Planck)
 ```
 ### Define Dataframe
-First, create de dataframe wich contains the Planck data:
+First, create de dataframe which contains the Planck data:
 ```{r dataframe}
 DefinePlanckData()
 ```

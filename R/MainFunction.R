@@ -10,7 +10,7 @@
 #' @param Winterv Interval Wavelength
 #' @return Nothing, just create dataframes
 #' @export
-DefinePlanckData <- function(Tmin=1000,Tmax=10000,Tinterv=1000,Wmin=0.01,Wmax=3000,Winterv=1){
+DefinePlanckData <- function(Tmin=2000,Tmax=20000,Tinterv=1000,Wmin=0.01,Wmax=3000,Winterv=1){
                             #Call for the variables definition like speed of light and other constants
                             Define_Variables()
                             #Create empty dataframe to store all the inforation

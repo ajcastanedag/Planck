@@ -13,7 +13,7 @@
 #' @export
 #'
 PlotPlanckData <- function(PlankData_F){
-    Planck_Graph <- ggplot(PlankData_F, aes(Wavelength, Radiance, color = Temperature)) +
+    Planck_Graph <- ggplot(PlankData_F, aes(Wavelength, Radiance, color = Temperature), width = 900, height = 600) +
                     labs(color = "Temperature in K \n") +
                     geom_point(size = 0.5)+
                     #geom_line(data =WienData, aes(Wavelength, Radiance_Max), color = "white") +

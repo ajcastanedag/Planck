@@ -14,7 +14,7 @@
 #'
 PlotPlanckData <- function(PlankData_F){
     Planck_Graph <- ggplot(PlankData_F, aes(Wavelength, Radiance, color = Temperature), width = 900, height = 600) +
-                    labs(color = "Temperature in K \n") +
+                    labs(color = "Temperature\n in K \n") +
                     geom_point(size = 0.5)+
                     #geom_line(data =WienData, aes(Wavelength, Radiance_Max), color = "white") +
                     scale_color_gradientn(colours = Star_Col, breaks=seq(min(PlankData_F$Temperature),max(PlankData_F$Temperature),2000)) +
@@ -25,12 +25,13 @@ PlotPlanckData <- function(PlankData_F){
                     ylab("Spectral Radiance Exitance") +
                     ylim(0,4.3e16) +
                     geom_point(aes(Lam_Mx, RMax), color = "white") +
-                    theme(legend.position = c(0.9, 0.6),
+                    theme(legend.position = c(0.9, 0.8),
                           legend.background = element_rect(fill="black",
-                                              size=0.5,
+                                              size=0.3,
                                               linetype="solid"),
-                          legend.title.align = 0.6,
-                          legend.key.height = unit(3,"line"))
+                          legend.title.align = 0.5,
+                          legend.key.height = unit(4.5,"line"),
+                          legend.key.width = unit(0.6,"line"))
 
     Planck_Graph <<- Planck_Graph
     return(Planck_Graph)

@@ -32,7 +32,7 @@ DefinePlanckData <- function(Tmin=2000,Tmax=20000,Tinterv=1000,Wmin=0.01,Wmax=30
                             PlankData_F <<- PlankData_F
                             #Remove temporal data created that will not be used any more
                             rm(list=ls())
-}
+                      }
 
 
 
